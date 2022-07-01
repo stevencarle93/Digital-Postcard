@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- start adding new tags here -->
+		<div class="postcard">
+			<div class="postcard-header">
+				<h1>My Postcard</h1>
+				<img
+					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+					width="auto"
+					height="auto"
+				/>
+			</div>
+			<div class="postcard-body">
+				<div class="body-left">
+					<p>Look how awesome! This is a postcard that Icreated using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+					<p>This is so cool, can't wait to start doing more sutff</p>
+				</div>
+				<div class="body-right">
+					<input
+						type="text"
+						name="theName"
+						value="Name"
+						onblur="if(this.value==''){ this.value='Name'; this.style.color='#BBB';}"
+						onfocus="if(this.value=='Name'){ this.value=''; this.style.color='#000';}"
+						style="color: #bbb"
+					/>
+					<input
+						type="text"
+						name="theEmail"
+						value="Email"
+						onblur="if(this.value==''){ this.value='Email'; this.style.color='#BBB';}"
+						onfocus="if(this.value=='Email'){ this.value=''; this.style.color='#000';}"
+						style="color: #bbb"
+					/>
+					<input
+						type="text"
+						name="theComment"
+						value="Comment"
+						onblur="if(this.value==''){ this.value='Comment'; this.style.color='#BBB';}"
+						onfocus="if(this.value=='Comment'){ this.value=''; this.style.color='#000';}"
+						style="color: #bbb"
+					/>
+				</div>
+			</div>
+			<div class="postcard-footer">
+				<button>Send My Postcard</button>
+			</div>
+		</div>
+	</body>
+</html>
